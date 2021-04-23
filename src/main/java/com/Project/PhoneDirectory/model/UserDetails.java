@@ -20,7 +20,6 @@ public class UserDetails {
 
     //Getters and setters
 
-
     public UserLogin getUserLogin() {
         return userLogin;
     }

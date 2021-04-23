@@ -31,7 +31,7 @@ public class UserController {
         UserLogin existingUser = userService.loginUser(user);
         if(existingUser == null){
             System.out.println("User not exist");
-            return "users/login";
+            return "redirect:/users/login";
         }else {
             // Maintain the session
             session.setAttribute("LoggedUser", existingUser);
