@@ -22,7 +22,7 @@ public class UserController {
     @RequestMapping(method = RequestMethod.GET, value = "/users/login")
     public String loginUser(Model model){
         model.addAttribute("user", new UserLogin());
-        return "login";
+        return "users/login";
     }
 
     //Mapping to check user credentials - Post request
@@ -31,7 +31,7 @@ public class UserController {
         UserLogin existingUser = userService.loginUser(user);
         if(existingUser == null){
             System.out.println("User not exist");
-            return "login";
+            return "users/login";
         }else {
             // Maintain the session
             session.setAttribute("LoggedUser", existingUser);
@@ -46,7 +46,7 @@ public class UserController {
         UserSignUp userSignUp = new UserSignUp();
         userLogin.setUserSignUp(userSignUp);
         model.addAttribute("user", new UserLogin());
-        return "registration";
+        return "users/registration";
 
     }
 

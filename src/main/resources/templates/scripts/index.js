@@ -1,7 +1,5 @@
 function loaded()
 {
-
-
     var xhttp1 = new XMLHttpRequest();
     xhttp1.open("GET", "http://localhost:8080/users/getDetail", true);
     xhttp1.onreadystatechange = function() {
@@ -32,32 +30,6 @@ function users(data)
 
 
 function ADDdataonload(Name,mob_no,email) {
-
-
-
-
-    /*
-    var Name=document.getElementById("Name").value;
-    var mob_no=document.getElementById("mob_no").value;
-    var email=document.getElementById("email").value;
-        if (Name === "")
-        {
-            alert("Please enter your Name");
-//return false;
-        }
-        if (mob_no === "")
-        {
-            alert("Please enter your number");
-//return false;
-        }
-        if (email === "")
-        {
-            alert("Please enter your email");
-//return false;
-        }
-*/
-//return true;
-
 
 
     //creat a table
@@ -104,8 +76,6 @@ function ADDdataonload(Name,mob_no,email) {
     table.appendChild(tr);
 
 }
-
-
 
 
 

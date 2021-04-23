@@ -45,13 +45,6 @@ public class UserDetailsController {
         return "redirect:/users/getDetail";
     }
 
-    //Mapping to delete details
-//    @RequestMapping(method = RequestMethod.DELETE, value = "/delete/{id}")
-//    public String deleteDetail(@PathVariable("id") Integer userid){
-//        //UserLogin user = (UserLogin) session.getAttribute("LoggedUser");
-//        userDetailsService.deleteDetail(userid);
-//        return "showData";
-//    }
 
     @RequestMapping("/delete")
     public String delete(@RequestParam(name = "id") Integer id) {
